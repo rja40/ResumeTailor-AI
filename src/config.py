@@ -33,6 +33,9 @@ class Settings:
     temperature: float
     max_tokens: int
     ui_theme: ThemeName
+    resend_api_key: str
+    contact_to_email: str
+    contact_from_email: str
 
     @property
     def active_model(self) -> str:
@@ -60,6 +63,9 @@ def load_settings() -> Settings:
         temperature=float(os.getenv("LLM_TEMPERATURE", "0.2")),
         max_tokens=int(os.getenv("LLM_MAX_TOKENS", "8192")),
         ui_theme=theme,  # type: ignore[arg-type]
+        resend_api_key=os.getenv("RESEND_API_KEY", ""),
+        contact_to_email=os.getenv("CONTACT_TO_EMAIL", ""),
+        contact_from_email=os.getenv("CONTACT_FROM_EMAIL", "onboarding@resend.dev"),
     )
 
 

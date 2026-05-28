@@ -25,8 +25,7 @@ def _inject_css() -> None:
           .stApp { background: #000 !important; color: #ededed !important; }
           .main .block-container { max-width: 880px; padding-top: 1.4rem; padding-bottom: 6rem; }
           #MainMenu, footer, header[data-testid="stHeader"] { display: none !important; }
-          [data-testid="stToolbar"], [data-testid="stSidebar"],
-          [data-testid="collapsedControl"] { display: none !important; }
+          [data-testid="stToolbar"] { display: none !important; }
 
           h1, h2, h3, h4 {
             font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace !important;

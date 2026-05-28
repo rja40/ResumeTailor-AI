@@ -32,8 +32,7 @@ def _inject_css() -> None:
             padding: 1.2rem 2rem 4rem;
           }
           #MainMenu, footer, header[data-testid="stHeader"] { display: none !important; }
-          [data-testid="stToolbar"], [data-testid="stSidebar"],
-          [data-testid="collapsedControl"] { display: none !important; }
+          [data-testid="stToolbar"] { display: none !important; }
 
           /* Top bar */
           .ws-topbar {

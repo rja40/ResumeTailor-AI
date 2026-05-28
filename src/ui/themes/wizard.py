@@ -36,8 +36,7 @@ def _inject_css() -> None:
             padding-bottom: 4rem;
           }
           #MainMenu, footer, header[data-testid="stHeader"] { display: none !important; }
-          [data-testid="stToolbar"], [data-testid="stSidebar"],
-          [data-testid="collapsedControl"] { display: none !important; }
+          [data-testid="stToolbar"] { display: none !important; }
 
           h1, h2, h3 { color: #111827 !important; font-weight: 600 !important; }
 
