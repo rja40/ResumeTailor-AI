@@ -9,6 +9,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+try:
+    import streamlit as st
+    for _k, _v in st.secrets.items():
+        os.environ.setdefault(_k, str(_v))
+except Exception:
+    pass
+
 ProviderName = Literal["anthropic", "openai"]
 ThemeName = Literal["terminal", "minimal", "workspace", "wizard"]
 
